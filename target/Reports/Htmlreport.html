@@ -19,9 +19,9 @@
         <span class="ms-3 fs-6">Selenium and TestNG Demo</span>
       </div>
       <div>
-        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 4m 38s</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 16_Feb_25 14_50_06</span>
-        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 16_Feb_25 14_54_45</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 1m 14s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 18_Feb_25 12_18_55</span>
+        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 18_Feb_25 12_20_10</span>
           <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
             <i class="bi bi-pc-display-horizontal"></i></button>
         <button role="button" id="shortcuts" class="btn btn-outline-primary smaller" title="Shortcuts">
@@ -46,8 +46,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp1">1</span> Passed,
-                <span id="sf1">0</span> Failed,
+                <span id="sp1">0</span> Passed,
+                <span id="sf1">1</span> Failed,
                 <span id="ss1">0</span> Skipped
               </div>
             </div>
@@ -63,8 +63,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp2">1</span> Passed,
-                <span id="sf2">0</span> Failed,
+                <span id="sp2">0</span> Passed,
+                <span id="sf2">1</span> Failed,
                 <span id="ss2">0</span> Skipped
               </div>
             </div>
@@ -80,8 +80,8 @@
                   </div>
                 </div>
                 <div class="card-footer small">
-                  <span id="sp3">3</span> Passed,
-                  <span id="sf3">0</span> Failed,
+                  <span id="sp3">1</span> Passed,
+                  <span id="sf3">4</span> Failed,
                   <span id="ss3">0</span> Skipped
                 </div>
               </div>
@@ -108,34 +108,318 @@
         </div>
       </div>
     </div>
-      <div class="test-container passed">
+      <div class="test-container failed">
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <h6 class="mb-3 testname fs-6 passed">Default suite</h6>
+              <h6 class="mb-3 testname fs-6 failed">Default suite</h6>
               <div class="small">
-                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 4m 16s</span>
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 1m 6s</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  16_Feb_25 14_50_25</span>
+                  18_Feb_25 12_19_04</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  16_Feb_25 14_54_41</span>
+                  18_Feb_25 12_20_10</span>
               </div>
               
             </div>
             <div class="col-8">
-                <div class="card mb-3 result passed">
+                <div class="card mb-3 result failed">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <div>
-                          <i class="bi bi-check-circle-fill text-success"></i>
+                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
                         <span class="fs-6 ms-2">qa.tests.samplePageDemo</span>
                       </div>
                       <div>
-                        <span class="badge text-dark bg-light">4m 15s</span>
+                        <span class="badge text-dark bg-light">1m 5s</span>
                       </div>
                     </div>
                     
   <div class="mt-3 border-top">
+    <div class="leaf failed pb-1">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="fs-6 ms-2">TestCase2</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">9s</span>
+        </div>
+      </div>
+      <p class="desc">[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]</p>
+        <pre class="py-2 mt-2 mb-4">java.lang.AssertionError: expected [Message Sent ] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre>
+        <div class="mt-3">
+          <pre class="pb-0">
+Entered choosefile 
+Entered name 
+Entered email 
+Checked boxes
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/f795deb5-d9dd-4dae-a8cc-4096e2287404.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/a36706ae-868f-4897-9e14-759b61b7e3f9.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/dbd311bf-5fed-4516-8002-9aae645e17fa.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/d5c3deb2-bbef-4fc5-8f81-f091b30b40e9.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf failed pb-1">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="fs-6 ms-2">TestCase2</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">8s</span>
+        </div>
+      </div>
+      <p class="desc">[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]</p>
+        <pre class="py-2 mt-2 mb-4">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre>
+        <div class="mt-3">
+          <pre class="pb-0">
+Entered choosefile 
+Entered name 
+Entered email 
+Checked boxes
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/2b2a955a-93c8-4c2a-b645-c0bb563906a3.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/e3f87fc3-483d-4961-b35c-afcf0f550980.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/f677ddad-4196-4511-a172-675f75ac1671.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/88ab8c26-b9ac-40eb-b55e-cb960a7ed88c.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf failed pb-1">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="fs-6 ms-2">TestCase2</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">16s</span>
+        </div>
+      </div>
+      <p class="desc">[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]</p>
+        <pre class="py-2 mt-2 mb-4">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre>
+        <div class="mt-3">
+          <pre class="pb-0">
+Entered choosefile 
+Entered name 
+Entered email 
+Checked boxes
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/c372edb2-158d-4d4b-8968-874c92452b24.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/2e90a53c-013b-4783-958b-32c3e7ffbbfe.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/f3458ba9-3b3d-4803-af31-883cb2333e5b.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/c0e74f60-004d-4b80-b97e-48da6f186d7a.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf failed pb-1">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="fs-6 ms-2">TestCase2</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">11s</span>
+        </div>
+      </div>
+      <p class="desc">[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]</p>
+        <pre class="py-2 mt-2 mb-4">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre>
+        <div class="mt-3">
+          <pre class="pb-0">
+Entered choosefile 
+Entered name 
+Entered email 
+Checked boxes
+Test failed:TestCase2
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/7044d690-8204-453e-ba7d-b78ddaa49c87.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/85bd8bdf-c3ef-4d18-a2ea-8c6390adf436.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/ca55e8bf-9db1-4944-bb35-522b71fb9a17.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/89aeb93d-d2d5-4728-92a3-18d915770e29.png" />
+            </div>
+            <div class="embed col-2 mb-1">
+              <img src="resources/51838a68-dbaf-409b-b731-176576749b61.png" />
+            </div>
+        </div>
+    </div>
     <div class="leaf passed pb-1">
       <div class="d-flex justify-content-between mt-3">
         <div>
@@ -143,7 +427,7 @@
           <span class="fs-6 ms-2">TestCase1</span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">46s</span>
+          <span class="badge text-dark bg-light">13s</span>
         </div>
       </div>
       <p class="desc">[{=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, email=demo1@in.co}]</p>
@@ -157,84 +441,16 @@ Checked boxes
         </div>
         <div class="row mt-3">
             <div class="embed col-2 mb-1">
-              <img src="resources/7bb3ca0f-8240-4d86-bef5-a6841b297707.png" />
+              <img src="resources/70f97d45-b08a-4db5-bac8-08804e48d211.png" />
             </div>
             <div class="embed col-2 mb-1">
-              <img src="resources/34bf58c2-93af-4637-ba8c-27860e9ae6af.png" />
+              <img src="resources/3b3fd875-3fb8-4cd8-bfc5-7b925a3998fc.png" />
             </div>
             <div class="embed col-2 mb-1">
-              <img src="resources/be13c760-e8ee-4ea1-8e09-b8e966cac0ba.png" />
+              <img src="resources/d98112b9-be03-4dbe-a37f-2bf06b0f4ea7.png" />
             </div>
             <div class="embed col-2 mb-1">
-              <img src="resources/28d793db-76e9-424f-b9cb-642238b05485.png" />
-            </div>
-        </div>
-    </div>
-    <div class="leaf passed pb-1">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="fs-6 ms-2">TestCase1</span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">43s</span>
-        </div>
-      </div>
-      <p class="desc">[{=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, email=demo3@in.co}]</p>
-        <div class="mt-3">
-          <pre class="pb-0">
-Entered choosefile 
-Entered name 
-Entered email 
-Checked boxes
-          </pre>
-        </div>
-        <div class="row mt-3">
-            <div class="embed col-2 mb-1">
-              <img src="resources/a31c7818-56b2-4d16-99d9-7490ca358df6.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/b43e7fcf-9c14-4ae3-b852-c201ec8a5640.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/0021dfad-5899-44ec-9eee-71ef3563a29c.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/20ea6049-e142-4863-b3af-469907adbcc6.png" />
-            </div>
-        </div>
-    </div>
-    <div class="leaf passed pb-1">
-      <div class="d-flex justify-content-between mt-3">
-        <div>
-            <i class="bi bi-check-circle-fill text-success"></i>
-          <span class="fs-6 ms-2">TestCase2</span>
-        </div>
-        <div>
-          <span class="badge text-dark bg-light">44s</span>
-        </div>
-      </div>
-      <p class="desc">[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]</p>
-        <div class="mt-3">
-          <pre class="pb-0">
-Entered choosefile 
-Entered name 
-Entered email 
-Checked boxes
-          </pre>
-        </div>
-        <div class="row mt-3">
-            <div class="embed col-2 mb-1">
-              <img src="resources/10f62236-a61c-4df9-887d-3bbe62fc0891.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/05710837-1305-4bbe-be66-8e92b041b575.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/2db5cb22-ef7e-4e0f-a923-8c198a7f98f4.png" />
-            </div>
-            <div class="embed col-2 mb-1">
-              <img src="resources/bac23ba4-58df-43ea-9883-e03f3fefe3d9.png" />
+              <img src="resources/c267b611-58eb-419e-b668-0265ca4164b8.png" />
             </div>
         </div>
     </div>
@@ -250,22 +466,22 @@ Checked boxes
   </div>
 
   <script>
-    const stats1Annotation = {'total': 1, 'passed': 1};
+    const stats1Annotation = {'total': 1, 'passed': 0};
     const stats1 = [
-      { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
-      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+      { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
       { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
     ];
-      const stats2Annotation = {'total': 1, 'passed': 1};
+      const stats2Annotation = {'total': 1, 'passed': 0};
       const stats2 = [
-        { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
-      const stats3Annotation = {'total': 3, 'passed': 3};
+      const stats3Annotation = {'total': 5, 'passed': 1};
       const stats3 = [
-        { result: 'Passed', count: 3, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 4, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
      
@@ -346,12 +562,12 @@ Checked boxes
                   <td>Toggle skipped tests</td>
                 </tr>
                 <tr>
-                  <td>esc</td>
-                  <td>Reset all filters</td>
-                </tr>
-                <tr>
                   <td>L</td>
                   <td>Toggle theme (light/dark)</td>
+                </tr>
+                <tr>
+                  <td>esc</td>
+                  <td>Reset all filters</td>
                 </tr>
                 <tr>
                   <td>f</td>

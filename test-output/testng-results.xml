@@ -1,21 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="8" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-16T14:50:25 IST" name="Default suite" finished-at="2025-02-16T14:54:41 IST" duration-ms="255663">
+  <suite started-at="2025-02-18T12:19:04 IST" name="Default suite" finished-at="2025-02-18T12:20:10 IST" duration-ms="65741">
     <groups>
     </groups>
-    <test started-at="2025-02-16T14:50:25 IST" name="Default test" finished-at="2025-02-16T14:54:41 IST" duration-ms="255663">
+    <test started-at="2025-02-18T12:19:04 IST" name="Default test" finished-at="2025-02-18T12:20:10 IST" duration-ms="65741">
       <class name="qa.tests.samplePageDemo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:50:35 IST" name="setUp" finished-at="2025-02-16T14:51:19 IST" duration-ms="43993" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:05 IST" name="setUp" finished-at="2025-02-18T12:19:06 IST" duration-ms="1185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:51:21 IST" name="init" finished-at="2025-02-16T14:51:21 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:06 IST" name="init" finished-at="2025-02-18T12:19:06 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="TestCase1(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:51:21 IST" name="TestCase1" data-provider="testDataProvider" finished-at="2025-02-16T14:52:08 IST" duration-ms="46706" status="PASS">
+        <test-method retried="true" signature="TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:06 IST" name="TestCase2" data-provider="testDataProvider" finished-at="2025-02-18T12:19:16 IST" duration-ms="9978" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Message Sent ] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Message Sent ] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:16 IST" name="onFailureScreenshot" finished-at="2025-02-18T12:19:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureScreenshot -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:16 IST" name="setUp" finished-at="2025-02-18T12:19:17 IST" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:17 IST" name="init" finished-at="2025-02-18T12:19:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method retried="true" signature="TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:17 IST" name="TestCase2" data-provider="testDataProvider" finished-at="2025-02-18T12:19:26 IST" duration-ms="8987" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Message Sent ] but found [Message Sent (go back)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:26 IST" name="onFailureScreenshot" finished-at="2025-02-18T12:19:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureScreenshot -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:26 IST" name="setUp" finished-at="2025-02-18T12:19:27 IST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:27 IST" name="init" finished-at="2025-02-18T12:19:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method retried="true" signature="TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:27 IST" name="TestCase2" data-provider="testDataProvider" finished-at="2025-02-18T12:19:43 IST" duration-ms="16625" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Message Sent ] but found [Message Sent (go back)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:43 IST" name="onFailureScreenshot" finished-at="2025-02-18T12:19:43 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureScreenshot -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:43 IST" name="setUp" finished-at="2025-02-18T12:19:44 IST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:44 IST" name="init" finished-at="2025-02-18T12:19:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:44 IST" name="TestCase2" data-provider="testDataProvider" finished-at="2025-02-18T12:19:55 IST" duration-ms="11075" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Message Sent ] but found [Message Sent (go back)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:55 IST" name="onFailureScreenshot" finished-at="2025-02-18T12:19:56 IST" duration-ms="400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase2 status=FAILURE method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@54d18072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureScreenshot -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:56 IST" name="setUp" finished-at="2025-02-18T12:19:57 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:57 IST" name="init" finished-at="2025-02-18T12:19:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="TestCase1(java.util.Map)[pri:1, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:19:57 IST" name="TestCase1" data-provider="testDataProvider" finished-at="2025-02-18T12:20:10 IST" duration-ms="13059" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,89 +318,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:52:08 IST" name="tearDown" finished-at="2025-02-16T14:52:19 IST" duration-ms="11103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:52:19 IST" name="onFailureScreenshot" finished-at="2025-02-16T14:52:21 IST" duration-ms="1716" status="PASS">
+        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:20:10 IST" name="onFailureScreenshot" finished-at="2025-02-18T12:20:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8] output={null}]]]>
+                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:1, instance:qa.tests.samplePageDemo@54d18072] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onFailureScreenshot -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:52:21 IST" name="setUp" finished-at="2025-02-16T14:52:42 IST" duration-ms="20716" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:qa.tests.samplePageDemo@54d18072]" started-at="2025-02-18T12:20:10 IST" name="quitBrowser" finished-at="2025-02-18T12:20:10 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:52:42 IST" name="init" finished-at="2025-02-16T14:52:42 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="TestCase1(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:52:42 IST" name="TestCase1" data-provider="testDataProvider" finished-at="2025-02-16T14:53:25 IST" duration-ms="43644" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, email=demo3@in.co}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:53:25 IST" name="tearDown" finished-at="2025-02-16T14:53:28 IST" duration-ms="2576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:53:28 IST" name="onFailureScreenshot" finished-at="2025-02-16T14:53:29 IST" duration-ms="1128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onFailureScreenshot -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:53:29 IST" name="setUp" finished-at="2025-02-16T14:53:53 IST" duration-ms="23695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:53:53 IST" name="init" finished-at="2025-02-16T14:53:53 IST" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:53:53 IST" name="TestCase2" data-provider="testDataProvider" finished-at="2025-02-16T14:54:38 IST" duration-ms="44362" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:54:38 IST" name="tearDown" finished-at="2025-02-16T14:54:40 IST" duration-ms="2243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="onFailureScreenshot(org.testng.ITestResult)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8]" started-at="2025-02-16T14:54:40 IST" name="onFailureScreenshot" finished-at="2025-02-16T14:54:41 IST" duration-ms="1115" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestCase2 status=SUCCESS method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instance:qa.tests.samplePageDemo@7905a0b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onFailureScreenshot -->
+        </test-method> <!-- quitBrowser -->
       </class> <!-- qa.tests.samplePageDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

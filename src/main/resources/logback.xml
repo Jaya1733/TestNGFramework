@@ -1,0 +1,24 @@
+<configuration>
+
+    <!-- Console Appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Set log message format -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger Configuration -->
+    <root level="warn"> <!-- Set log level to warn to suppress INFO and DEBUG logs -->
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- Specific Logger for TestNG (if needed) -->
+    <logger name="org.testng" level="warn"/> <!-- Suppress TestNG INFO/DEBUG logs -->
+    <!-- Show INFO logs for specific package -->
+	<logger name="com.aventstack.chaintest" level="info"/> 
+    
+    <!-- Optional: If you want to adjust log levels for other libraries -->
+    <logger name="com.aventstack.chaintest" level="warn"/> <!-- Suppress ChainTest logs -->
+
+</configuration>

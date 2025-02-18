@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\JayalakshmiKudumula\AppData\Local\Temp\testng-eclipse--1366321488\testng-customsuite.xml</span>
+                    <span>C:\Users\JayalakshmiKudumula\AppData\Local\Temp\testng-eclipse--186482801\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +141,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase1({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, em...)">TestCase1({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, em...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)">TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="qa.tests.samplePageDemo" class="method navigator-link" hash-for-method="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -128,26 +156,108 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">qa.tests.samplePageDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase1({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, em...)">
-                  </a> <!-- TestCase1({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, em...) -->
-                  <span class="method-name">TestCase1</span>
-                  <span class="parameters">({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, email=demo3@in.co})</span>
+                  <a name="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">
+                  </a> <!-- TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...) -->
+                  <span class="method-name">TestCase2</span>
+                  <span class="parameters">({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">qa.tests.samplePageDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)">
-                  </a> <!-- TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...) -->
-                  <span class="method-name">TestCase1</span>
-                  <span class="parameters">({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, email=demo1@in.co})</span>
+                  <a name="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">
+                  </a> <!-- TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...) -->
+                  <span class="method-name">TestCase2</span>
+                  <span class="parameters">({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Message Sent ] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -156,6 +266,104 @@
                   </a> <!-- TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...) -->
                   <span class="method-name">TestCase2</span>
                   <span class="parameters">({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)">
+                  </a> <!-- TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...) -->
+                  <span class="method-name">TestCase2</span>
+                  <span class="parameters">({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2, email=demo2@in.co})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Message Sent ] but found [Message Sent (go back)]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at qa.pageobjects.SamplePageClass.verifyTextMessage(SamplePageClass.java:124)
+	at qa.tests.samplePageDemo.TestCase2(samplePageDemo.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">qa.tests.samplePageDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)">
+                  </a> <!-- TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...) -->
+                  <span class="method-name">TestCase1</span>
+                  <span class="parameters">({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, email=demo1@in.co})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,7 +371,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\JayalakshmiKudumula\AppData\Local\Temp\testng-eclipse--1366321488\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\JayalakshmiKudumula\AppData\Local\Temp\testng-eclipse--186482801\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -212,24 +420,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestCase1')
+data.setCell(0, 1, 'TestCase2')
 data.setCell(0, 2, 'qa.tests.samplePageDemo')
-data.setCell(0, 3, 46706);
+data.setCell(0, 3, 16625);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestCase2')
+data.setCell(1, 1, 'TestCase1')
 data.setCell(1, 2, 'qa.tests.samplePageDemo')
-data.setCell(1, 3, 44362);
+data.setCell(1, 3, 13059);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestCase1')
+data.setCell(2, 1, 'TestCase2')
 data.setCell(2, 2, 'qa.tests.samplePageDemo')
-data.setCell(2, 3, 43644);
+data.setCell(2, 3, 11075);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestCase2')
+data.setCell(3, 2, 'qa.tests.samplePageDemo')
+data.setCell(3, 3, 9978);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestCase2')
+data.setCell(4, 2, 'qa.tests.samplePageDemo')
+data.setCell(4, 3, 8987);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,60 +478,86 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">45265 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)</span>
-                <span class="method-start">45597 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">92595 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">onFailureScreenshot([TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:0, inst...)</span>
-                <span class="method-start">103715 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">105454 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">init</span>
-                <span class="method-start">126194 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TestCase1({=, website=https://www.google.com/, name=demo3, comment=testcasecomment, TestCaseName=TestCase1, em...)</span>
-                <span class="method-start">126230 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">169958 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">onFailureScreenshot([TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:0, inst...)</span>
-                <span class="method-start">172549 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">174040 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">init</span>
-                <span class="method-start">197773 ms</span>
+                <span class="method-start">1225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</span>
-                <span class="method-start">197865 ms</span>
+                <span class="method-start">1243 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">242250 ms</span>
+                <span class="method-name">onFailureScreenshot([TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instanc...)</span>
+                <span class="method-start">11235 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">11960 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</span>
+                <span class="method-start">11964 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">onFailureScreenshot([TestResult name=TestCase2 status=SUCCESS method=samplePageDemo.TestCase2(java.util.Map)[pri:0, inst...)</span>
-                <span class="method-start">244515 ms</span>
+                <span class="method-name">onFailureScreenshot([TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instanc...)</span>
+                <span class="method-start">20959 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">21961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</span>
+                <span class="method-start">21963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onFailureScreenshot([TestResult name=TestCase2 status=SKIP method=samplePageDemo.TestCase2(java.util.Map)[pri:0, instanc...)</span>
+                <span class="method-start">38593 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">38596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">39602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestCase2({=, website=https://www.google.com/, name=testing2, comment=testcasecomment, TestCaseName=TestCase2,...)</span>
+                <span class="method-start">39609 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onFailureScreenshot([TestResult name=TestCase2 status=FAILURE method=samplePageDemo.TestCase2(java.util.Map)[pri:0, inst...)</span>
+                <span class="method-start">50703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">51146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">51891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TestCase1({=, website=https://www.google.com/, name=demo1, comment=testcasecomment, TestCaseName=TestCase1, em...)</span>
+                <span class="method-start">51894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onFailureScreenshot([TestResult name=TestCase1 status=SUCCESS method=samplePageDemo.TestCase1(java.util.Map)[pri:1, inst...)</span>
+                <span class="method-start">64961 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">65005 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

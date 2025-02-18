@@ -16,6 +16,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -46,19 +47,18 @@ public class UtilityClasses extends BasePage {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/*
-	 * Method to enter date ; n is parameter to add days
-	 * format dd MMM yyyy
+	 * Method to enter date ; n is parameter to add days format dd MMM yyyy
 	 */
 	public String enterDate(int n) {
 		Calendar calendar = Calendar.getInstance();
-		calendar.add(Calendar.DAY_OF_YEAR,  n);
+		calendar.add(Calendar.DAY_OF_YEAR, n);
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy");
 		String futureDate = dateFormat.format(calendar.getTime());
 		return futureDate;
 	}
-	
+
 	/*
 	 * Method to Get value from property file
 	 */
@@ -67,6 +67,22 @@ public class UtilityClasses extends BasePage {
 		FileInputStream fis = new FileInputStream(keyFile);
 		prop.load(fis);
 		return prop.getProperty(key);
+	}
+
+	/*
+	 * Method to click button using actions class ; Webelement is parameter
+	 */
+	public void actionsClick(WebElement ele) {
+		Actions ac = new Actions(driver);
+		ac.click(ele).build().perform();
+	}
+
+	/*
+	 * Method to perform mouse hover using actions class ; Webelement is parameter
+	 */
+	public void actionsMouseHover(WebElement ele) {
+		Actions ac = new Actions(driver);
+		ac.moveToElement(ele).perform();
 	}
 
 	/*
@@ -84,22 +100,22 @@ public class UtilityClasses extends BasePage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(waitTimeInSeconds));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(ele));
 	}
-	
+
 	/*
-	 * Method to click button using javascript executor;
-	 * Webelement is parameter
+	 * Method to click button using javascript executor; Webelement is parameter
 	 */
 	public void javaScriptclickLink(WebElement ele) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", ele);
 	}
-	
-	 /* Method to accept alert;
+
+	/*
+	 * Method to accept alert;
 	 * 
 	 */
 	public void acceptAlert() {
-		 Alert alert = driver.switchTo().alert();
-	        alert.accept();
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 	}
-	
+
 }

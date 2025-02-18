@@ -1,0 +1,1 @@
+{"uuid":"161d8009-0e24-4385-b0f8-bc36251e854a","name":"qa.tests.samplePageDemo.init","children":["edc72c40-22f4-4c16-a9d2-65f3f7622382"],"description":"","befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1739812821625,"stop":1739812821626}],"afters":[],"start":1739812821625,"stop":1739812821626}

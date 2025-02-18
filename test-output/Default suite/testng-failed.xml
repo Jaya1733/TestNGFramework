@@ -5,12 +5,11 @@
     <classes>
       <class name="qa.tests.samplePageDemo">
         <methods>
-          <include name="TestCase1"/>
-          <include name="TestCase2"/>
+          <include name="TestCase2" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="onFailureScreenshot"/>
+          <include name="quitBrowser"/>
           <include name="init"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- qa.tests.samplePageDemo -->
     </classes>
